@@ -1,0 +1,477 @@
+/*
+    Theme Name: Auditema
+    Author: Rezan Turan
+*/
+
+/*
+    3280px - 4K stor skärm
+    2560px - 2K stor skärm
+    1920px - Stor skärm
+
+    1440px - 15" Laptop
+    1280px - 13" laptop
+
+    1024px - tablet landscape
+    768px - tablet portrait
+
+    414px - iphone plus
+    320px - iPhone 5s and older
+*/
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+
+section{
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+h1, h2, h3, a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+}
+
+h4, p{
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+#logo, li, img .fa-bars .audi-logga-mobil .navbar {
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+.fa-bars{
+    display: none;
+}
+.responsiv-logga{
+    display: none;
+}
+
+/*------------------------------ ### Header ### -----------------------------------------------------------*/
+
+header{
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 1;
+}
+
+#logo{
+    width: 140px;
+    float: left;
+    margin-left: 20px; 
+}
+
+#logo:hover{
+    opacity: 0.5;
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    -o-transform: scale(1.8);
+}
+
+#logo img{
+    width: 100%;
+}
+
+header nav{
+    margin: 10px 50px 0 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header nav ul li{
+    float: left;
+    margin-left: 25px;
+}
+header nav ul li a{
+    font-size: 16px;
+}
+header nav ul li:hover{
+    padding-top: 5px;
+}
+
+/*------------------------------ ### Home ### -----------------------------------------------------------*/
+#home h1{
+    margin: 240px auto 0 auto;
+    font-size: 60px;
+}
+#home h2{
+    margin: 0 auto 0 auto;
+    font-size: 25px;
+}
+#home img{
+    opacity: 0.7;
+}
+#home img:hover{
+    opacity: 1;
+}
+
+/*------------------------------ ### Service ### -----------------------------------------------------------*/
+#services-info{
+    display: inline-block;
+}
+
+.ul-icon{
+    float: left;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    border-radius: 10px;
+}
+.ul-icon .li-icon{
+    list-style: none;
+    text-align: center;
+    display: block;
+}
+
+.ul-icon .li-icon .a-icon{
+    text-decoration: none;
+    padding: 0 50px;
+    display: block;
+    color: #000;
+}
+.ul-icon .li-icon .a-icon .icon{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 0 auto 10px;
+}
+.ul-icon .li-icon .a-icon .icon .fas{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+    color: #000;
+}
+/*-----------------------### 4 boxar -------------------------------------------------------------------------*/
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+.box{
+    width: 50%;
+    height: 437px;
+    font-size: 50px;
+}
+.audi-blue-picture{
+    width: 100%;
+    height: 437px;
+}
+.text1{
+    color: #707070;
+    font-size: 19px;
+}
+.text2{
+    font-size: 35px;
+    color: #1B1B1B;
+}
+.text3{
+    font-size: 18px;
+    color: #1B1B1B;
+}
+.box-responsive{
+    display: none;
+}
+.box-screen{
+    width: 50%;
+    height: 437px;
+    font-size: 50px;
+}
+button{
+    border: none;
+    border-radius: 36px 0px;
+    width: 200px;
+    height: 61px;
+    background-color: #2964C8;
+    color: wheat;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+button:hover{
+    background-color:rgba(63, 114, 202, 0.521);
+    color: #000;
+}
+
+/*------------------------------ ### Provkör ### -----------------------------------------------------------*/
+
+.cockpit-bcg{
+    width: 100%;
+    height: auto;
+}
+/*------------------------------ ### About ### ------------------------------------------------------------*/
+
+#about h4{
+    font-size: 25;
+}
+#about p{
+    width: 700px;
+    margin: 0 auto 0;
+}
+
+/*------------------------------ ### Footer-nav ### ------------------------------------------------------------*/
+#footer-nav{
+    background-color: #1B1B1B;
+    min-height: 220px;
+    margin-top: -4px;
+}
+.navbar {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center
+  }
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover{
+    padding-top: 5px;
+  }
+  .footer-nav-logga{
+      margin-top: 40px;
+  }
+
+/*------------------------------ ### Footer ### ------------------------------------------------------------*/
+
+footer{
+    background-color: black;
+    color: white;
+    display: grid;
+}
+/*------------------------------ ### Media Queries ### -----------------------------------------------------------*/
+
+
+/*-----Tablet------*/
+@media screen and (max-width:1024px){
+    #logo{
+        display: none;
+    }
+    header nav{
+        margin: 0;
+        float: none;
+        display: block;
+    }
+    .fa-bars{
+        font-size: 50px;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        text-align: left;
+        color: white;
+        margin: 20px;
+        position: relative;
+        top: -69px;
+    }
+    .fa-bars:hover{
+        opacity: 0.5;
+    }
+    header nav ul{
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        top: -80px;
+    }
+    header nav ul.open{
+        height: auto;
+    }
+    header nav ul li{
+        width: 100%;
+        padding: 5px 0;
+        margin: 0;
+        font-size: 20px;
+        border-top: 1px solid rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    header nav ul li:hover{
+        background-color: #000000;
+    }
+ .responsiv-logga{
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    .audi-logga-mobil{
+        width: 143px;
+        height: 45px;
+    }
+    #home h1{
+        font-size: 45px;
+        margin-top: 200px;
+    }
+    #home h2{
+        font-size: 22px;
+    }
+    #about p {
+        width: 80%;
+    }
+    .ul-icon .li-icon .a-icon {
+        padding: 0px 115px;   
+    }
+    #home{
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        background: url(images/quatro.jpg);
+        min-height: 100%;
+    } 
+    .slideshow{
+        display: none;
+    }
+    .ul-icon{ 
+        display: block;
+        float: none;
+}
+section{
+    min-height: 0;
+}
+
+/*------------------### 4 boxar Responsive ###--------------------*/
+    .box{
+        width: 40%;
+        margin: 20px; 
+        box-sizing: border-box;
+    }
+}
+
+/*-----Mobile------*/
+@media screen and (max-width:768px){
+    #logo{
+        display: none;
+    }
+    header nav{
+        margin: 0;
+        float: none;
+        display: block;
+    }
+    .fa-bars{
+        font-size: 50px;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        text-align: left;
+        color: white;
+        margin: 20px;
+        position: relative;
+        top: -69px;
+    }
+    .fa-bars:hover{
+        opacity: 0.5;
+    }
+    header nav ul{
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        top: -80px;
+    }
+    header nav ul.open{
+        height: auto;
+    }
+    header nav ul li{
+        width: 100%;
+        padding: 5px 0;
+        margin: 0;
+        font-size: 11px;
+        border-top: 1px solid rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    header nav ul li:hover{
+        background-color: #000000;
+    }
+    #home h1{
+        font-size: 25px;
+        margin-top: 200px;
+    }
+    #home h2{
+        width: 70%;
+        height: auto;
+    }
+    .responsiv-logga{
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    .audi-logga-mobil{
+        width: 143px;
+        height: 45px;
+    }
+     #home{
+        background: url(images/quatro.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100%;
+    } 
+    .slideshow{
+        display: none;
+    }
+    .ul-icon .li-icon .a-icon {
+        padding: 0px 70px;    
+    }
+    .ul-icon{
+        float: none;
+        display: block;
+}
+.navbar {
+    float: none;
+    display: grid;
+  }
+  .box-screen{
+    display: none;
+  }
+  .box-responsive{
+    display: flex;
+    width: 90%;
+    height: 400px;
+    font-size: 50px;
+  }
+/*------------------### 4 boxar Responsive ###--------------------*/
+.box{
+    width: 90%;
+    margin: 20px;
+    box-sizing: border-box;
+}
+section{
+    min-height: 0;
+}
+
+}
+
+/* ### 320px - iPhone 5s and older ### */
+@media screen and (max-width:375px){
+    .ul-icon .li-icon .a-icon {
+        padding: 0px 20px;
+    }
+}
+
